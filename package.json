@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sentry/nextjs": "^7.74.0",
     "@vercel/analytics": "^1.1.1",
     "next": "13.5.4",
     "react": "^18",
