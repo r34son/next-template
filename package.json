@@ -1,6 +1,7 @@
 {
   "name": "next",
   "version": "0.1.0",
+  "packageManager": "pnpm@7.29.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
