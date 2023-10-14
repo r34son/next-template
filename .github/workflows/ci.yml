@@ -7,12 +7,15 @@ on:
     branches: ['master']
 
 jobs:
-  unit:
+  validate:
+    name: Validate
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -25,6 +28,22 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Validate current commit (last commit) with commitlint
+        if: github.event_name == 'push'
+        run: |
+          pnpm exec commitlint \
+            --from ${{ github.event.before }} \
+            --to ${{ github.event.after }} \
+            --verbose
+
+      - name: Validate PR commits with commitlint
+        if: github.event_name == 'pull_request'
+        run: |
+          pnpm exec commitlint \
+            --from ${{ github.event.pull_request.base.sha }} \
+            --to ${{ github.event.pull_request.head.sha }} \
+            --verbose
 
       - name: Run the tests and generate coverage report
         run: pnpm test -- --coverage
