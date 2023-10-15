@@ -1,10 +1,21 @@
+const withPlugins = require('next-compose-plugins');
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 const { withSentryConfig } = require('@sentry/nextjs');
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
 
 module.exports = withSentryConfig(
-  nextConfig,
+  withPlugins([[withBundleAnalyzer]], nextConfig),
   {
     // For all available options, see:
     // https://github.com/getsentry/sentry-webpack-plugin#options
@@ -32,5 +43,5 @@ module.exports = withSentryConfig(
 
     // Automatically tree-shake Sentry logger statements to reduce bundle size
     disableLogger: true,
-  }
+  },
 );

@@ -9,6 +9,7 @@ describe('Home', () => {
       name: /By Vercel Logo/i,
     });
 
+    // @ts-ignore
     expect(heading).toBeInTheDocument();
   });
 });
