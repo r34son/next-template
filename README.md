@@ -1,4 +1,5 @@
 [![codecov](https://codecov.io/gh/r34son/next/graph/badge.svg?token=XZPJYER826)](https://codecov.io/gh/r34son/next)
+[![Playwright Tests](https://github.com/r34son/next-template/actions/workflows/playwright.yml/badge.svg)](https://github.com/r34son/next-template/actions/workflows/playwright.yml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
