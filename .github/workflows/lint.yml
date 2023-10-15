@@ -1,4 +1,4 @@
-name: CI
+name: Lint
 
 on:
   push:
@@ -55,7 +55,7 @@ jobs:
         run: pnpm run types:check
 
       - name: Run the tests and generate coverage report
-        run: pnpm test -- --coverage --coverageReporters=text --coverageReporters=cobertura
+        run: pnpm test:unit -- --coverage --coverageReporters=text --coverageReporters=cobertura
 
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3

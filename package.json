@@ -21,10 +21,13 @@
     "lint:styles:fix": "pnpm run lint:styles:check --fix",
     "preinstall": "npx only-allow pnpm",
     "setup": "is-ci || simple-git-hooks",
-    "test": "jest",
-    "test:e2e": "exit 0",
+    "test:unit": "jest",
+    "test:e2e": "playwright test",
+    "test:e2e:codegen": "playwright codegen",
+    "test:e2e:debug": "playwright test --debug",
+    "test:e2e:ui": "playwright test --ui",
     "types:check": "tsc --noEmit",
-    "validate": "run-p format:check lint:check types:check test test:e2e"
+    "validate": "run-p format:check lint:check types:check test:unit test:e2e"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.5.4",
@@ -39,8 +42,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
+    "@playwright/test": "^1.39.0",
     "@testing-library/jest-dom": "^6.1.4",
     "@testing-library/react": "^14.0.0",
+    "@types/is-ci": "^3.0.2",
     "@types/jest": "^29.5.5",
     "@types/node": "^20",
     "@types/react": "^18",
