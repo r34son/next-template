@@ -28,7 +28,7 @@ specifiers:
   react: ^18
   react-dom: ^18
   simple-git-hooks: ^2.9.0
-  stylelint: ^15.10.3
+  stylelint: ^15.11.0
   stylelint-config-standard: ^34.0.0
   typescript: ^5
 
@@ -40,7 +40,7 @@ dependencies:
   next-compose-plugins: 2.2.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  stylelint-config-standard: 34.0.0_stylelint@15.10.3
+  stylelint-config-standard: 34.0.0_stylelint@15.11.0
 
 devDependencies:
   '@commitlint/cli': 17.8.0
@@ -63,7 +63,7 @@ devDependencies:
   npm-run-all2: 6.1.1
   prettier: 3.0.3
   simple-git-hooks: 2.9.0
-  stylelint: 15.10.3_typescript@5.2.2
+  stylelint: 15.11.0_typescript@5.2.2
   typescript: 5.2.2
 
 packages:
@@ -2236,9 +2236,9 @@ packages:
       which: 2.0.2
     dev: true
 
-  /css-functions-list/3.2.0:
-    resolution: {integrity: sha512-d/jBMPyYybkkLVypgtGv12R+pIFw4/f/IHtCTxWpZc8ofTYOPigIgmA6vu5rMHartZC+WuXhBUHfnyNUIQSYrg==}
-    engines: {node: '>=12.22'}
+  /css-functions-list/3.2.1:
+    resolution: {integrity: sha512-Nj5YcaGgBtuUmn1D7oHqPW0c9iui7xsTsj5lIX8ZgevdfhmjFfKB3r8moHJtNJnctnYXJyYX5I1pp90HM4TPgQ==}
+    engines: {node: '>=12 || >=16'}
 
   /css-tree/2.3.1:
     resolution: {integrity: sha512-6Fv1DV/TYw//QF5IzQdqsNDjx/wc8TrMBZsqjL9eW01tWb7R7k/mq+/VXfJCl7SoD5emsJop9cOByJZfs8hYIw==}
@@ -3013,6 +3013,13 @@ packages:
   /file-entry-cache/6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
     engines: {node: ^10.12.0 || >=12.0.0}
+    dependencies:
+      flat-cache: 3.1.1
+    dev: true
+
+  /file-entry-cache/7.0.1:
+    resolution: {integrity: sha512-uLfFktPmRetVCbHe5UPuekWrQ6hENufnA46qEGbfACkK5drjTTdQYUragRgMjHldcbYG+nslUerqMPjbBSHXjQ==}
+    engines: {node: '>=12.0.0'}
     dependencies:
       flat-cache: 3.1.1
 
@@ -4338,8 +4345,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /known-css-properties/0.28.0:
-    resolution: {integrity: sha512-9pSL5XB4J+ifHP0e0jmmC98OGC1nL8/JjS+fi6mnTlIf//yt/MfVLtKg7S6nCtj/8KTcWX7nRlY0XywoYY1ISQ==}
+  /known-css-properties/0.29.0:
+    resolution: {integrity: sha512-Ne7wqW7/9Cz54PDt4I3tcV+hAyat8ypyOGzYRJQfdxnnjeWsTxt1cy8pjvvKeI5kfXuyvULyeeAvwvvtAX3ayQ==}
 
   /language-subtag-registry/0.3.22:
     resolution: {integrity: sha512-tN0MCzyWnoz/4nHS6uxdlFWoUZT7ABptwKPQ52Ea7URk6vll88bWBVhodtnlfEuCcKWNGoc+uGbw1cwa9IKh/w==}
@@ -5750,27 +5757,27 @@ packages:
       react: 18.2.0
     dev: false
 
-  /stylelint-config-recommended/13.0.0_stylelint@15.10.3:
+  /stylelint-config-recommended/13.0.0_stylelint@15.11.0:
     resolution: {integrity: sha512-EH+yRj6h3GAe/fRiyaoO2F9l9Tgg50AOFhaszyfov9v6ayXJ1IkSHwTxd7lB48FmOeSGDPLjatjO11fJpmarkQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 15.10.3_typescript@5.2.2
+      stylelint: 15.11.0_typescript@5.2.2
     dev: false
 
-  /stylelint-config-standard/34.0.0_stylelint@15.10.3:
+  /stylelint-config-standard/34.0.0_stylelint@15.11.0:
     resolution: {integrity: sha512-u0VSZnVyW9VSryBG2LSO+OQTjN7zF9XJaAJRX/4EwkmU0R2jYwmBSN10acqZisDitS0CLiEiGjX7+Hrq8TAhfQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
       stylelint: ^15.10.0
     dependencies:
-      stylelint: 15.10.3_typescript@5.2.2
-      stylelint-config-recommended: 13.0.0_stylelint@15.10.3
+      stylelint: 15.11.0_typescript@5.2.2
+      stylelint-config-recommended: 13.0.0_stylelint@15.11.0
     dev: false
 
-  /stylelint/15.10.3_typescript@5.2.2:
-    resolution: {integrity: sha512-aBQMMxYvFzJJwkmg+BUUg3YfPyeuCuKo2f+LOw7yYbU8AZMblibwzp9OV4srHVeQldxvSFdz0/Xu8blq2AesiA==}
+  /stylelint/15.11.0_typescript@5.2.2:
+    resolution: {integrity: sha512-78O4c6IswZ9TzpcIiQJIN49K3qNoXTM8zEJzhaTE/xRTCZswaovSEVIa/uwbOltZrk16X4jAxjaOhzz/hTm1Kw==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -5781,12 +5788,12 @@ packages:
       balanced-match: 2.0.0
       colord: 2.9.3
       cosmiconfig: 8.3.6_typescript@5.2.2
-      css-functions-list: 3.2.0
+      css-functions-list: 3.2.1
       css-tree: 2.3.1
       debug: 4.3.4
       fast-glob: 3.3.1
       fastest-levenshtein: 1.0.16
-      file-entry-cache: 6.0.1
+      file-entry-cache: 7.0.1
       global-modules: 2.0.0
       globby: 11.1.0
       globjoin: 0.1.4
@@ -5795,7 +5802,7 @@ packages:
       import-lazy: 4.0.0
       imurmurhash: 0.1.4
       is-plain-object: 5.0.0
-      known-css-properties: 0.28.0
+      known-css-properties: 0.29.0
       mathml-tag-names: 2.1.3
       meow: 10.1.5
       micromatch: 4.0.5
