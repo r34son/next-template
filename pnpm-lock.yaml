@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': ^17.8.0
   '@commitlint/config-conventional': ^18.1.0
-  '@next/bundle-analyzer': ^13.5.4
+  '@next/bundle-analyzer': ^14.0.1
   '@playwright/test': ^1.39.0
   '@sentry/nextjs': ^7.74.1
   '@testing-library/jest-dom': ^6.1.4
@@ -33,7 +33,7 @@ specifiers:
   typescript: ^5
 
 dependencies:
-  '@next/bundle-analyzer': 13.5.4
+  '@next/bundle-analyzer': 14.0.1
   '@sentry/nextjs': 7.74.1_next@13.5.4+react@18.2.0
   '@vercel/analytics': 1.1.1
   next: 13.5.4_biqbaboplfbrettd7655fr4n2y
@@ -946,8 +946,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.15
     dev: true
 
-  /@next/bundle-analyzer/13.5.4:
-    resolution: {integrity: sha512-2vgmkuSKyTiyI7NorL+zYerxQRvzmSGbCDr2/kVrbKX28a4UNhbYn8/cQW8z6pvx0EncEFpd0GCUA5r9aRLhJg==}
+  /@next/bundle-analyzer/14.0.1:
+    resolution: {integrity: sha512-AbZZnj4gZ1ZQFppZxAC9e8+skj0rFiSvY6E6Ut+ydS1r6oizR7PMu/7o02psIm4ekAsmp2O1Eq8IowHQgPWPCQ==}
     dependencies:
       webpack-bundle-analyzer: 4.7.0
     transitivePeerDependencies:
