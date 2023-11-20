@@ -40,7 +40,7 @@
     "stylelint-config-standard": "^34.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.8.0",
+    "@commitlint/cli": "^18.4.2",
     "@commitlint/config-conventional": "^18.4.2",
     "@playwright/test": "^1.39.0",
     "@testing-library/jest-dom": "^6.1.4",
