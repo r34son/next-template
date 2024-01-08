@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^18.4.2
-  '@commitlint/config-conventional': ^18.4.2
+  '@commitlint/config-conventional': ^18.4.4
   '@next/bundle-analyzer': ^14.0.1
   '@playwright/test': ^1.39.0
   '@sentry/nextjs': ^7.80.0
@@ -44,7 +44,7 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 18.4.2_typescript@5.2.2
-  '@commitlint/config-conventional': 18.4.2
+  '@commitlint/config-conventional': 18.4.4
   '@playwright/test': 1.39.0
   '@testing-library/jest-dom': 6.1.4_iqlqvvq4kdwrrnwujncoonjh6m
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
@@ -437,8 +437,8 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional/18.4.2:
-    resolution: {integrity: sha512-qFjIqgKGV89lzUGHxanq2WJDXk5wZIxoZmZvf0I4i4CirL06Xj8qRh1shPsXNyI15d8Rj2HExww6cGJSFU9DdA==}
+  /@commitlint/config-conventional/18.4.4:
+    resolution: {integrity: sha512-Bz3sPQSboBN+Et/KyZrR+OJ3z9PrHDw7Bls0/hv94PmuHBtMq1dCGxS9XzTGzxeMNlytCC4kxF083tbhPljl3Q==}
     engines: {node: '>=v18'}
     dependencies:
       conventional-changelog-conventionalcommits: 7.0.2
