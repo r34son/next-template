@@ -7,7 +7,7 @@ specifiers:
   '@playwright/test': ^1.39.0
   '@sentry/nextjs': ^7.80.0
   '@testing-library/jest-dom': ^6.1.4
-  '@testing-library/react': ^14.0.0
+  '@testing-library/react': ^14.2.1
   '@types/is-ci': ^3.0.4
   '@types/jest': ^29.5.8
   '@types/node': ^20
@@ -47,7 +47,7 @@ devDependencies:
   '@commitlint/config-conventional': 18.4.2
   '@playwright/test': 1.39.0
   '@testing-library/jest-dom': 6.1.4_iqlqvvq4kdwrrnwujncoonjh6m
-  '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
+  '@testing-library/react': 14.2.1_biqbaboplfbrettd7655fr4n2y
   '@types/is-ci': 3.0.4
   '@types/jest': 29.5.8
   '@types/node': 20.8.6
@@ -1315,8 +1315,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/14.0.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==}
+  /@testing-library/react/14.2.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-sGdjws32ai5TLerhvzThYFbpnF9XtL65Cjf+gB0Dhr29BGqK+mAeN7SURSdu+eqgET4ANcWoC7FQpkaiGvBr+A==}
     engines: {node: '>=14'}
     peerDependencies:
       react: ^18.0.0
