@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@commitlint/cli': ^18.4.2
-  '@commitlint/config-conventional': ^18.4.2
+  '@commitlint/config-conventional': ^19.0.3
   '@next/bundle-analyzer': ^14.0.1
   '@playwright/test': ^1.39.0
   '@sentry/nextjs': ^7.80.0
@@ -44,7 +44,7 @@ dependencies:
 
 devDependencies:
   '@commitlint/cli': 18.4.2_typescript@5.2.2
-  '@commitlint/config-conventional': 18.4.2
+  '@commitlint/config-conventional': 19.0.3
   '@playwright/test': 1.39.0
   '@testing-library/jest-dom': 6.1.4_iqlqvvq4kdwrrnwujncoonjh6m
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
@@ -437,10 +437,11 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-conventional/18.4.2:
-    resolution: {integrity: sha512-qFjIqgKGV89lzUGHxanq2WJDXk5wZIxoZmZvf0I4i4CirL06Xj8qRh1shPsXNyI15d8Rj2HExww6cGJSFU9DdA==}
+  /@commitlint/config-conventional/19.0.3:
+    resolution: {integrity: sha512-vh0L8XeLaEzTe8VCxSd0gAFvfTK0RFolrzw4o431bIuWJfi/yRCHJlsDwus7wW2eJaFFDR0VFXJyjGyDQhi4vA==}
     engines: {node: '>=v18'}
     dependencies:
+      '@commitlint/types': 19.0.3
       conventional-changelog-conventionalcommits: 7.0.2
     dev: true
 
@@ -580,6 +581,14 @@ packages:
     engines: {node: '>=v18'}
     dependencies:
       chalk: 4.1.2
+    dev: true
+
+  /@commitlint/types/19.0.3:
+    resolution: {integrity: sha512-tpyc+7i6bPG9mvaBbtKUeghfyZSDgWquIDfMgqYtTbmZ9Y9VzEm2je9EYcQ0aoz5o7NvGS+rcDec93yO08MHYA==}
+    engines: {node: '>=v18'}
+    dependencies:
+      '@types/conventional-commits-parser': 5.0.0
+      chalk: 5.3.0
     dev: true
 
   /@csstools/css-parser-algorithms/2.3.2_qabfbasg4cggam7o7issvon7wi:
@@ -1365,6 +1374,12 @@ packages:
     resolution: {integrity: sha512-ojlGK1Hsfce93J0+kn3H5R73elidKUaZonirN33GSmgTUMpzI/MIFfSpF3haANe3G1bEBS9/9/QEqwTzwqFsKw==}
     dependencies:
       '@babel/types': 7.23.0
+    dev: true
+
+  /@types/conventional-commits-parser/5.0.0:
+    resolution: {integrity: sha512-loB369iXNmAZglwWATL+WRe+CRMmmBPtpolYzIebFaX4YA3x+BEfLqhUAV9WanycKI3TG1IMr5bMJDajDKLlUQ==}
+    dependencies:
+      '@types/node': 20.8.6
     dev: true
 
   /@types/estree/1.0.2:
